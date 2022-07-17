@@ -50,11 +50,7 @@ int communicateSensorData()
     return printsuccess;
 }
     
- int main()
- {
-     test();
-     return 0;
- }
+ 
     
          
      
