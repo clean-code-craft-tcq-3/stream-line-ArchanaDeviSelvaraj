@@ -1,5 +1,4 @@
 #include "BMSDataSender.h"
-#include "test.c"
 
 int readings_count_check=0;
 
