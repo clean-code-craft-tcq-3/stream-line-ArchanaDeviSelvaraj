@@ -23,7 +23,7 @@ void readSensorDataFromFile(float* temperature, float* chargerate)
     fclose(fp); 
  }
     
- int printSensorDataToConsole(float* temperature, float* chargerate)
+ void printSensorDataToConsole(float* temperature, float* chargerate)
  {
      for(int index=0; index<total_readings_count; index++)
      {
