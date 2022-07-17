@@ -39,5 +39,11 @@ void readSensorDataFromFile(float* temperature, float* chargerate)
          return 0;
  }
     
+ int main()
+ {
+     test();
+     return 0;
+ }
+    
          
      
