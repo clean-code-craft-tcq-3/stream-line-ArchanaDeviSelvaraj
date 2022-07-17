@@ -13,10 +13,11 @@ void readSensorDataFromFile(float* temperature, float* chargerate)
     }
     else
     {
-    for(int index=0; fscanf(fp, "%f %f\n",&temp_data,&chargerate_data)!=EOF; index++)
-    {
-      *(temperature+index) = temp_data;
-      *(chargerate+index) = chargerate_data;
+        for(int index=0; fscanf(fp, "%f %f\n",&temp_data,&chargerate_data)!=EOF; index++)
+        {
+          *(temperature+index) = temp_data;
+          *(chargerate+index) = chargerate_data;
+        }
     }
     fclose(fp); 
  }
