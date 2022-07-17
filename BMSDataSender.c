@@ -6,7 +6,7 @@ void readSensorDataFromFile(float* temperature, float* chargerate)
 { 
     FILE *fp; 
     float temp_data,chargerate_data;
-    fp =fopen("SensorData.txt","r");
+    fp =fopen("SensorData.text","r");
     if (!fp)
     {
     printf("\n File doesn't exist");
