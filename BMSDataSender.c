@@ -24,7 +24,7 @@ void readSensorDataFromFile(float* temperature, float* chargerate)
     fclose(fp); 
  }
     
- void printSensorDataToConsole(float* temperature, float* chargerate)
+ int printSensorDataToConsole(float* temperature, float* chargerate)
  {
      for(int index=0; index<total_readings_count; index++)
      {
@@ -32,6 +32,7 @@ void readSensorDataFromFile(float* temperature, float* chargerate)
          readings_count_check++;
      }
      verifyPrintToConsole(readings_count_check);
+     retun readings_count_check;
  }
  
  int verifyPrintToConsole(int readings_count_check)
