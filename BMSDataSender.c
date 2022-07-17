@@ -31,8 +31,7 @@ void readSensorDataFromFile(float* temperature, float* chargerate)
          printf("%f \t %f \n",*(temperature+index),*(chargerate+index));
          readings_count_check++;
      }
-     verifyPrintToConsole(readings_count_check);
-     retun readings_count_check;
+     return verifyPrintToConsole(readings_count_check);
  }
  
  int verifyPrintToConsole(int readings_count_check)
@@ -42,6 +41,13 @@ void readSensorDataFromFile(float* temperature, float* chargerate)
      else
          return 0;
  }
+
+int communicateSensorData()
+{
+    readSensorDataFromFile(float* temperature, float* chargerate);
+    int output = printSensorDataToConsole(float* temperature, float* chargerate);
+    return output;
+}
     
  int main()
  {
