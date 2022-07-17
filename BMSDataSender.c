@@ -25,7 +25,7 @@ void readSensorDataFromFile(float* temperature, float* chargerate)
     
  int printSensorDataToConsole(float* temperature, float* chargerate)
  {
-     for(int index=0,index<total_readings_count;index++)
+     for(int index=0; index<total_readings_count; index++)
      {
          printf("%f \t %f \n",*(temperature+index),*(chargerate+index));
          readings_count_check++;
