@@ -10,5 +10,4 @@ void readSensorDataFromFile
     while (fgets(temperature,chargerate,1000, fp)!=NULL)
     printf("%f","%f",temperature,chargerate);
     fclose(fp); 
-    return 0;
  }
