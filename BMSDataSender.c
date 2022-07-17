@@ -45,8 +45,8 @@ void readSensorDataFromFile(float* temperature, float* chargerate)
 int communicateSensorData()
 {
     readSensorDataFromFile(float* temperature, float* chargerate);
-    int output = printSensorDataToConsole(float* temperature, float* chargerate);
-    return output;
+    int printsuccess = printSensorDataToConsole(float* temperature, float* chargerate);
+    return printsuccess;
 }
     
  int main()
