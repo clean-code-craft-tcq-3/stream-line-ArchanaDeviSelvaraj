@@ -2,7 +2,7 @@
 #include "BMSDataSender.h"
 
 void test()
-{.
+{
   float temperature,chargerate;
   int readings_count_check;
   printf("Check if print on console is successful);
