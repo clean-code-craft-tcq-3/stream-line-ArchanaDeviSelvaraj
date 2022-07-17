@@ -1,4 +1,3 @@
-#include<stdio.h>
 #include "BMSDataSender.h"
 #include "test.c"
 
