@@ -1,5 +1,6 @@
 #include <assert.h>
 #include "BMSDataSender.h"
+#include "BMSDataSender.c"
 
 void test()
 {
