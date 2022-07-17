@@ -6,7 +6,7 @@ void readSensorDataFromFile
     float temperature,chargerate;
     fp =fopen("SensorData.txt","r");
     if (!fp)
-    return 1;
+    printf("\n File doesn't exist");
     while (fgets(temperature,chargerate,1000, fp)!=NULL)
     printf("%f","%f",temperature,chargerate);
     fclose(fp); 
