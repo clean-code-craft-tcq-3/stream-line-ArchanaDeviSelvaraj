@@ -1,3 +1,4 @@
+#include<stdio.h>
 #define total_readings_count 50
 
 void readSensorDataFromFile(float* temperature, float* chargerate);
