@@ -23,6 +23,8 @@ int main()
        assert(chargerate_array[count] == output_data[index][1]);
        count++;
      }
+   
+     assert(printSensorDataToConsole(temperature_array,chargerate_array)==1);
      
      return 0;
  }
