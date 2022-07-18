@@ -24,7 +24,8 @@ int main()
        count++;
      }
    
-     printSensorDataToConsole(temperature_array,chargerate_array);
+     int printcheck = printSensorDataToConsole(temperature_array,chargerate_array);
+     assert(printcheck == 1);
      
      return 0;
  }
