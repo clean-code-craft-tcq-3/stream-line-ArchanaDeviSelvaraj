@@ -16,15 +16,9 @@ int main()
      readSensorDataFromFile(temperature_array,chargerate_array);
  
      printf("\n Temperature : %f \t Charge rate : %f \n",*(temperature_array+0),*(chargerate_array+0)); 
-     float temp_value_1 = *(temperature_array+0);
-     float chargerate_value_1 = *(chargerate_array+0);
-     assert(temp_value_1 == 10);
-     assert(chargerate_value_1 == 0.100000);
- 
+     
      printf("\n Temperature : %f \t Charge rate : %f \n",*(temperature_array+49),*(chargerate_array+49)); 
-     float temp_value_50 = *(temperature_array+49);
-     float chargerate_value_50 = *(chargerate_array+49);
-     //assert(temp_value_1 == 10);
+     
      return 0;
  }
 
