@@ -19,7 +19,7 @@ int main()
      float expected_temp_value_1 = *(temperature_array+0);
      float expected_chargerate_value_1 = *(chargerate_array+0);
      assert(expected_temp_value_1 == 10);
-     assert(expected_chargerate_value_1 == 0.10);
+     assert(expected_chargerate_value_1 == 0.100000);
  
      printf("\n Temperature : %f \t Charge rate : %f \n",*(temperature_array+49),*(chargerate_array+49)); 
      float expected_temp_value_50 = *(temperature_array+49);
