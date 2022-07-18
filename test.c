@@ -20,7 +20,7 @@ int main()
      printf("\n Temperature : %f \t Charge rate : %f \n",*(temperature_array+49),*(chargerate_array+49)); 
      assert(*(temperature_array+24) == 2);
      float chargerate_25 = *(chargerate_array+24);
-     assert(chargerate_25 == 0.100000);
+     assert(chargerate_25 == 0.10);
      return 0;
  }
 
