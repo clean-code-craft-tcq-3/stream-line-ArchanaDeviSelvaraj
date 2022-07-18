@@ -16,7 +16,7 @@ int main()
      readSensorDataFromFile(temperature_array,chargerate_array);
  
      printf("\n Temperature : %f \t Charge rate : %f \n",*(temperature_array+0),*(chargerate_array+0)); 
-     
+     printf("\n Temperature : %f \t Charge rate : %f \n",*(temperature_array+24),*(chargerate_array+24));
      printf("\n Temperature : %f \t Charge rate : %f \n",*(temperature_array+49),*(chargerate_array+49)); 
      
      return 0;
