@@ -14,8 +14,8 @@ int main()
      readSensorDataFromFile(temperature_array,chargerate_array);
      printSensorDataToConsole(temperature_array,chargerate_array);
      printf("\n Temperature : %f \t Charge rate : %f \n",*(temperature_array+0),*(chargerate_array+0));     
-     assert(*(temperature_array+0) == 10);
-     //assert(*(chargerate_array+0)  == 0.10);
+     //assert(*(temperature_array+0) == 10);
+     assert(*(chargerate_array+0)  == 0.10);
      return 0;
  }
 
