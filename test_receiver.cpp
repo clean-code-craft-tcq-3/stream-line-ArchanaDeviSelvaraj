@@ -1,5 +1,6 @@
 #include <assert.h>
 #include "BMSDataReceiver.hpp"
+#include "BMSDataSender.h"
 
 TEST_CASE("Sensor data read from console corresctly")
 {
