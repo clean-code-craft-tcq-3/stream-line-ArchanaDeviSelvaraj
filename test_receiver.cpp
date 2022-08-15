@@ -2,7 +2,7 @@
 #include "BMSDataReceiver.hpp"
 #include "BMSDataSender.h"
 
-int mian()
+int main()
 {
   float Temperature[total_readings_count] = {0};
   float ChargeRate[total_readings_count] = {0};
@@ -20,6 +20,7 @@ TEST_CASE("Check minimum, maximum and moving average of temperature and chargeRa
   float Temperature[readings_count] = {0};
   float ChargeRate[readings_count] = {0};
   readSensorDataFromConsole(&Temperature, &ChargeRate);*/
+  float observedMaxValue, observedMinValue, observedSMAValue, expectedMaxValue, expectedMinValue, expectedSMAValue;
   expectedMaxValue = 45;
   expectedMinValue = 0;
   expectedSMAValue = 18;
