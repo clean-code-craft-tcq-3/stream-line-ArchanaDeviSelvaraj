@@ -61,7 +61,7 @@ int printCalulatedDataToConsole(float* sensorParameterName,float maxValue, float
     return(1);
 }
 
-int displayProcessedData(int readings_count_check)
+int displayProcessedData(float* temperature, float* chargeRate)
 {
     readSensorDataFromConsole(temperature,chargeRate);
     printCalulatedDataToConsole(temperature,calculateMaxValue(temperature),calculateMinValue(temperature),calculateMovingAverage(temperature));
