@@ -45,4 +45,5 @@ TEST_CASE("Check minimum, maximum and moving average of temperature and chargeRa
   assert(observedSMAValue == expectedSMAValue);
 
   assert(printCalulatedDataToConsole(&ChargeRate[0],0.79,0.00,0.81) == 1);
+  return(1);
 }
