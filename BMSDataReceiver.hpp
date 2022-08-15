@@ -4,5 +4,6 @@
 void readSensorDataFromConsole(float* temperature, float* chargeRate);
 float calculateMaxValue(float* sensorParameterName);
 float calculateMinValue(float* sensorParameterName);
+float calculateMovingAverage(float* sensorParameterName);
 int printCalulatedDataToConsole(float* sensorParameterName,float maxValue, float minValue, float movingAverage);
 void displayProcessedData(float* Temperature, float* chargeRate);
