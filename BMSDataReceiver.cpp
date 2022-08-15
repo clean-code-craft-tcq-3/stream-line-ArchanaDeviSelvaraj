@@ -1,6 +1,5 @@
 #include "BMSDataReceiver.hpp"
 #include "BMSDataSender.h"
-#include <iostream.h>
 
 void readSensorDataFromConsole(float* temperature, float* chargeRate)
 {
@@ -51,14 +50,14 @@ flaot calculateMovingAverage(float* sensorParameterName)
 
 int printCalulatedDataToConsole(float* sensorParameterName,float maxValue, float minValue, float movingAverage)
 {
-    std::cout<<"Data received from sender:"<<endl;
+    printf("Data received from sender:");
     for(int index = 0; index < total_readings_count; index++)
     {
-        std::cout<<sensorParameterName[index]<<endl;
+        printf("%f\n",sensorParameterName[index]);
     }
-    cout<<"Maximum value = "<<maxValue<<endl;
-    cout<<"Minimum value = "<<minValue<<endl;
-    cout<<"Average value = "<<movingAverage<<endl;
+    printf("Maximum value = %f\n",maxValue);
+    printf("Minimum value = %f\n",minValue);
+    printf("Average value = %f\n",movingAverage);
     return(1);
 }
 
