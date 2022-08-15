@@ -4,8 +4,8 @@
 
 int mian()
 {
-  float Temperature[readings_count] = {0};
-  float ChargeRate[readings_count] = {0};
+  float Temperature[total_readings_count] = {0};
+  float ChargeRate[total_readings_count] = {0};
   displayProcessedData(&Temperature[0], &ChargeRate[0]);
   float expectedOutput[3][2] = {{10,0.10}, {26,0.15}, {26,0.15}};
   for(int index = 0; index < 2; index++)
