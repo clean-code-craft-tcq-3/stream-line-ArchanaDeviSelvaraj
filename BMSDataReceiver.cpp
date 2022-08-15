@@ -36,7 +36,7 @@ float calculateMinValue(float* sensorParameterName)
     return(minValue);
 }
 
-flaot calculateMovingAverage(float* sensorParameterName)
+float calculateMovingAverage(float* sensorParameterName)
 {
     float sum = 0;
     float movingAverage = 0;
