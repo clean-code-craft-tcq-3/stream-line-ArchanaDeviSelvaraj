@@ -8,7 +8,8 @@ int main()
   float ChargeRate[total_readings_count] = {0};
   displayProcessedData(&Temperature[0], &ChargeRate[0]);
   float expectedOutput[2][2] = {{10.000000,0.1000000}, {26.000000,0.150000}};
-  //printf("%f",Temperature[0]);
+  printf("-----------------------------------------------");
+  printf("%f %f",Temperature[0],ChargeRate[0]);
   for(int index = 0; index < 2; index++)
   {
     assert(Temperature[index] == expectedOutput[index][0]);
