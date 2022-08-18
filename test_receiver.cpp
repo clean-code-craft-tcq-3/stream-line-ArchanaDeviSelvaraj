@@ -9,10 +9,10 @@ int main()
   displayProcessedData(&Temperature[0], &ChargeRate[0]);
   float expectedOutput[3][2] = {{10.000000,0.1000000}, {26.000000,0.150000}};
   //printf("%f",Temperature[0]);
-  for(int index = 1; index < 3; index++)
+  for(int index = 0; index < 3; index++)
   {
-    assert(Temperature[index] == expectedOutput[index][1]);
-    assert(ChargeRate[index] == expectedOutput[index][2]);
+    assert(Temperature[index] == expectedOutput[index][0]);
+    assert(ChargeRate[index] == expectedOutput[index][1]);
   }
 /*}
 
