@@ -11,8 +11,8 @@ int main()
   //printf("%f",Temperature[0]);
   for(int index = 0; index < 2; index++)
   {
-    assert(Temperature[index] == expectedOutput[index][0]);
-    assert(ChargeRate[index] == expectedOutput[index][1]);
+    assert(Temperature[index] == expectedOutput[index][1]);
+    assert(ChargeRate[index] == expectedOutput[index][2]);
   }
 /*}
 
