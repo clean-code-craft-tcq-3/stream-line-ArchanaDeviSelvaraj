@@ -27,8 +27,10 @@ void readSensorDataFromConsole(float* temperature, float* chargeRate)
         
         
         int charPosition = strchr(line_input,':');
+        cout<<charPosition;
         if( charPosition != NULL)
         {
+            /*
             int index=0
             //cout<<"Line %d contains values"<<index<<endl;
             for(int i=charPosition + 1 ; i<charPosition + 1+8; i++)
@@ -38,6 +40,7 @@ void readSensorDataFromConsole(float* temperature, float* chargeRate)
             }
             //char Temp[9] = 
             cout<<Temperature_Trial<<endl;
+            */
             
         }
         else
