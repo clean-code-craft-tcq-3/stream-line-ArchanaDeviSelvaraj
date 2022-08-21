@@ -33,7 +33,7 @@ void readSensorDataFromConsole(float* temperature, float* chargeRate)
                 index++;
             }
             //cout<<Temperature_Trial<<endl;
-            //cout<<numberCount<<" "<<stof(Temperature_Trial)<<" ";
+            cout<<numberCount<<" "<<stof(Temperature_Trial)<<" ";
             
             index=0;
             for(int i=41 ; i<51; i++)
@@ -42,17 +42,19 @@ void readSensorDataFromConsole(float* temperature, float* chargeRate)
                 index++;
             }
             //cout<<SOC_Trial<<endl;;
-            //cout<<stof(SOC_Trial)<<endl;
+            cout<<stof(SOC_Trial)<<endl;
             
             
         }
         float temp_Temperature = stof(Temperature_Trial);
         float temp_chargeRate = stof(SOC_Trial);
         
+        /*
         temperature[numberCount] = temp_Temperature;
         cout<<numberCount<<endl<<temperature[numberCount]<<endl;
         chargeRate[numberCount] = temp_chargeRate;
         cout<<chargeRate[numberCount]<<endl;
+        */
         numberCount++;
     }
 }
