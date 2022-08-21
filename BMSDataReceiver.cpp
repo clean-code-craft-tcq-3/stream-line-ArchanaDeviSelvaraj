@@ -35,7 +35,7 @@ void readSensorDataFromConsole(float* temperature, float* chargeRate)
             //cout<<"Line %d contains values"<<index<<endl;
             for(int i=15 ; i<22; i++)
             {
-                Temperature_Trial[index] =  line_input[i];
+                Temperature_Trial[index] =  line_input{i};
                 index++;
             }
             //char Temp[9] = 
