@@ -25,17 +25,17 @@ void readSensorDataFromConsole(float* temperature, float* chargeRate)
         cout<<line_input<<endl;
         string lineStringFormat(line_input);
         
+        char Temperature_Trial[9] = {};
+        char SOC_Trial[9] = {};
         
-        charPosition = strchr(line_input,':');
-        //cout<<charPosition;
-        if( charPosition != NULL)
+        if( strchr(line_input,':') != NULL)
         {
             
             int index=0;
             //cout<<"Line %d contains values"<<index<<endl;
             for(int i=15 ; i<22; i++)
             {
-                char Temperature_Trial[index] =  line_input[i];
+                Temperature_Trial[index] =  line_input[i];
                 index++;
             }
             //char Temp[9] = 
@@ -45,7 +45,7 @@ void readSensorDataFromConsole(float* temperature, float* chargeRate)
             //cout<<"Line %d contains values"<<index<<endl;
             for(int i=38 ; i<45; i++)
             {
-                char SOC_Trial[index] =  line_input[i];
+                SOC_Trial[index] =  line_input[i];
                 index++;
             }
             //char Temp[9] = 
