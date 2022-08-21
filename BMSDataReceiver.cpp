@@ -51,7 +51,7 @@ void readSensorDataFromConsole(float* temperature, float* chargeRate)
             }
             //char Temp[9] = 
             cout<<SOC_Trial<<endl;
-            8cout<<stof(SOC_Trial)<<endl;
+            cout<<stof(SOC_Trial)<<endl;
             
         }
         else
