@@ -7,7 +7,7 @@ using namespace std;
 //char line_input[60] = {};  
 void readSensorDataFromConsole(float* temperature, float* chargeRate)
 {
-    int numberCount = 1;
+    int numberCount = 0;
     for(int index1 = 0; index1 <= total_readings_count*2; index1++)
     {
         //char line[100],a[20],b[20],c[20],d[20],e[20];
@@ -44,7 +44,7 @@ void readSensorDataFromConsole(float* temperature, float* chargeRate)
             //cout<<SOC_Trial<<endl;;
             //cout<<stof(SOC_Trial)<<endl;
             
-            numberCount++;
+            
         }
         float temp_Temperature = stof(Temperature_Trial);
         float temp_chargeRate = stof(SOC_Trial);
@@ -53,6 +53,7 @@ void readSensorDataFromConsole(float* temperature, float* chargeRate)
         cout<<numberCount<<endl<<temperature[numberCount] <<endl;
         chargeRate[numberCount] = temp_chargeRate;
         cout<<chargeRate[numberCount]<<endl;
+        numberCount++;
     }
 }
 
