@@ -41,7 +41,7 @@ void readSensorDataFromConsole(float* temperature, float* chargeRate)
             }
             //char Temp[9] = 
             //cout<<Temperature_Trial<<endl;
-            cout<<numberCount<<stof(Temperature_Trial)<<"";
+            cout<<numberCount<<" "<<stof(Temperature_Trial)<<" ";
             
             index=0;
             //cout<<"Line %d contains values"<<index<<endl;
