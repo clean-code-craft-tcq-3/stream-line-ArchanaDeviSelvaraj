@@ -27,7 +27,7 @@ TEST_CASE("Check minimum, maximum and moving average of temperature and chargeRa
   float observedMaxValue, observedMinValue, observedSMAValue, expectedMaxValue, expectedMinValue, expectedSMAValue;
   expectedMaxValue = 45;
   expectedMinValue = 0;
-  expectedSMAValue = 24;
+  expectedSMAValue = 18;
   observedMaxValue = calculateMaxValue(&Temperature[0]);
   observedMinValue = calculateMinValue(&Temperature[0]);
   observedSMAValue = calculateMovingAverage(&Temperature[0]);
@@ -39,7 +39,7 @@ TEST_CASE("Check minimum, maximum and moving average of temperature and chargeRa
 
   expectedMaxValue = 0.79;
   expectedMinValue = 0.00;
-  expectedSMAValue = 0.3248;
+  expectedSMAValue = 0.162;
   observedMaxValue = calculateMaxValue(&ChargeRate[0]);
   observedMinValue = calculateMinValue(&ChargeRate[0]);
   observedSMAValue = calculateMovingAverage(&ChargeRate[0]);
