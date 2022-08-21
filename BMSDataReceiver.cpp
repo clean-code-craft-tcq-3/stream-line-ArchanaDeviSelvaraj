@@ -20,6 +20,7 @@ void readSensorDataFromConsole(float* temperature, float* chargeRate)
         cin.getline(line_input,60);
         cout<<line_input<<endl;
        
+        /*
         char Temperature_Trial[9] = {};
         char SOC_Trial[9] = {};
         
@@ -44,7 +45,7 @@ void readSensorDataFromConsole(float* temperature, float* chargeRate)
             cout<<stof(SOC_Trial)<<endl;
             
             numberCount++;
-        }
+        }*/
 
         /*
         temperature[numberCount] = stof(Temperature_Trial);
