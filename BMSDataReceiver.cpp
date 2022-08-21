@@ -6,7 +6,7 @@ using namespace std;
 
 void readSensorDataFromConsole(float* temperature, float* chargeRate)
 {
-    char line[50];
+    /*char line[50];
     cin.getline(line,50);
     for(int index = 0; index < total_readings_count+1; index++)
     {
@@ -18,7 +18,27 @@ void readSensorDataFromConsole(float* temperature, float* chargeRate)
         //scanf("%f\t %f",&temperature[index],&chargeRate[index]);
         
         scanf("%s\t %s\t %f\t %s\t %s\t %f",&a,&b,&num1,&c,&d,&num2);
-        printf("%s\t %s\t %f\t %s\t %s\t %f\n",a,b,num1,c,d,num2);
+        printf("%s\t %s\t %f\t %s\t %s\t %f\n",a,b,num1,c,d,num2);*/
+    string data;
+    FILE* consoleOutput;
+    const int max_size = 1000;
+    char InputData[max_size];
+    
+    consoleOutput = popen(cmd.c_str(),"r");
+    if(consoleOutput)
+    {
+        while(!feof(consoleOutput))
+        {
+            if(fgets(InputData,max_size, consoleOutput) != NULL)
+            {
+                data.append(InputData);
+            }
+        }
+        pclose(stream);
+    }
+    
+    cout<<data;
+    
     }
 }
 
