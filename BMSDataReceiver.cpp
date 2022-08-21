@@ -99,11 +99,18 @@ float calculateMovingAverage(float* sensorParameterName)
 {
     float sum = 0;
     float movingAverage = 0;
-    for(int index = (total_readings_count - 5); index < total_readings_count; index++)
+    /*
+        for(int index = (total_readings_count - 5); index < total_readings_count; index++)
     {
         sum += sensorParameterName[index];
     }
-    movingAverage = sum / 5;
+    movingAverage = sum / 5;*/
+    
+    for(int index = 0; index < total_readings_count; index++)
+    {
+        sum += sensorParameterName[index];
+    }
+    movingAverage = sum/50;
     return(movingAverage);
 }
 
