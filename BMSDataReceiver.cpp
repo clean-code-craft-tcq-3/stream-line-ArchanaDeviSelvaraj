@@ -1,22 +1,13 @@
 #include "BMSDataReceiver.hpp"
-//#include "BMSDataSender.h"
 #include <iostream>
 #include <string.h>
-//#include <bits/stdc++.h>
 using namespace std;
 
-//char line_input[60] = {};  
 void readSensorDataFromConsole(float* temperature, float* chargeRate)
 {
     int numberCount = 0;
     for(int index1 = 0; index1 <= total_readings_count*2; index1++)
     {
-        //char line[100],a[20],b[20],c[20],d[20],e[20];
-        //float num1, num2;
-        //scanf("%s",line[index]);
-        //cin.getline(line,50);
-        //printf("%s\n",line);
-        //scanf("%f\t %f",&temperature[index],&chargeRate[index]);
         char line_input[60] = {};     
         
         cin.getline(line_input,60);
@@ -33,10 +24,6 @@ void readSensorDataFromConsole(float* temperature, float* chargeRate)
                 Temperature_Trial[index] =  line_input[i];
                 index++;
             }
-            //cout<<Temperature_Trial<<endl;
-            //cout<<numberCount<<" "<<stof(Temperature_Trial)<<" ";
-            //string temp_string(Temperature_Trial);
-            //cout<<temp_string<<endl;
             temperature[numberCount] = stof(Temperature_Trial);
             cout<<temperature[numberCount]<<endl;
             
@@ -46,24 +33,10 @@ void readSensorDataFromConsole(float* temperature, float* chargeRate)
                 SOC_Trial[index] =  line_input[i];
                 index++;
             }
-            //cout<<SOC_Trial<<endl;;
-            //cout<<stof(SOC_Trial)<<endl;
             chargeRate[numberCount] = stof(SOC_Trial);
             cout<<chargeRate[numberCount]<<endl;
-        
-        
-        //string SOC_string(SOC_Trial);
-        //cout<<SOC_string<<endl;
-        //float temp_Temperature = stof(temp_string);
-        //float temp_chargeRate = stof(SOC_string);
-        
-        /*
-        temperature[numberCount] = temp_Temperature;
-        cout<<numberCount<<endl<<temperature[numberCount]<<endl;
-        chargeRate[numberCount] = temp_chargeRate;
-        cout<<chargeRate[numberCount]<<endl;
-        */
-        numberCount++;
+            
+            numberCount++;
         }
     }
 }
@@ -105,14 +78,6 @@ float calculateMovingAverage(float* sensorParameterName)
         sum += sensorParameterName[index];
     }
     movingAverage = sum / 5;
-    
-    /*
-    for(int index = 0; index < total_readings_count; index++)
-    {
-        sum += sensorParameterName[index];
-    }
-    movingAverage = sum/50;
-    */
     return(movingAverage);
 }
 
