@@ -1,5 +1,7 @@
 #include "BMSDataReceiver.hpp"
 //#include "BMSDataSender.h"
+#include <string.h>
+using namespace std:
 
 void readSensorDataFromConsole(float* temperature, float* chargeRate)
 {
