@@ -1,8 +1,10 @@
-#include <assert.h>
+#define CATCH_CONFIG_MAIN  // This tells Catch to provide a main() - only do this in one cpp file
+
+#include "test/catch.hpp"
 #include "BMSDataReceiver.hpp"
 #include "BMSDataSender.h"
 
-int main()
+TEST_CASE("Tests to check whether sensor data is read from console and also to check whether correct Max, Min and SMA values of sensor parameters are printed on console") 
 {
   float Temperature[total_readings_count] = {0};
   float ChargeRate[total_readings_count] = {0};
@@ -12,8 +14,8 @@ int main()
   printf("%f %f",Temperature[0],ChargeRate[0]);
   for(int index = 0; index < 2; index++)
   {
-    assert(Temperature[index] == expectedOutput[index][0]);
-    assert(ChargeRate[index] == expectedOutput[index][1]);
+    REQUIRE(Temperature[index] == expectedOutput[index][0]);
+    REQUIRE(ChargeRate[index] == expectedOutput[index][1]);
   }
 /*}
 
@@ -29,11 +31,11 @@ TEST_CASE("Check minimum, maximum and moving average of temperature and chargeRa
   observedMaxValue = calculateMaxValue(&Temperature[0]);
   observedMinValue = calculateMinValue(&Temperature[0]);
   observedSMAValue = calculateMovingAverage(&Temperature[0]);
-  assert(observedMaxValue == expectedMaxValue);
-  assert(observedMinValue == expectedMinValue);
-  assert(observedSMAValue == expectedSMAValue);
+  REQUIRE(observedMaxValue == expectedMaxValue);
+  REQUIRE(observedMinValue == expectedMinValue);
+  REQUIRE(observedSMAValue == expectedSMAValue);
 
-  assert(printCalulatedDataToConsole(&Temperature[0],45,0,18) == 1);  
+  REQUIRE(printCalulatedDataToConsole(&Temperature[0],45,0,18) == 1);  
 
   expectedMaxValue = 0.79;
   expectedMinValue = 0.00;
@@ -41,10 +43,9 @@ TEST_CASE("Check minimum, maximum and moving average of temperature and chargeRa
   observedMaxValue = calculateMaxValue(&ChargeRate[0]);
   observedMinValue = calculateMinValue(&ChargeRate[0]);
   observedSMAValue = calculateMovingAverage(&ChargeRate[0]);
-  assert(observedMaxValue == expectedMaxValue);
-  assert(observedMinValue == expectedMinValue);
-  assert(observedSMAValue == expectedSMAValue);
+  REQUIRE(observedMaxValue == expectedMaxValue);
+  REQUIRE(observedMinValue == expectedMinValue);
+  REQUIRE(observedSMAValue == expectedSMAValue);
 
-  assert(printCalulatedDataToConsole(&ChargeRate[0],0.79,0.00,0.81) == 1);
-  return(1);
+  REQUIRE(printCalulatedDataToConsole(&ChargeRate[0],0.79,0.00,0.81) == 1);
 }
