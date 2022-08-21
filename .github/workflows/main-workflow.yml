@@ -22,6 +22,9 @@ jobs:
 
     - name: run sender
       run: ./testsender
+      
+    - name: run receiver
+      run: ./testreceiver
 
     - name: Pipeline sender/receiver
       run: ./testsender | ./testreceiver
