@@ -5,6 +5,9 @@ void readSensorDataFromConsole(float* temperature, float* chargeRate)
 {
     for(int index = 0; index < total_readings_count; index++)
     {
+        char line[100];
+        scanf("%s",line);
+        printf("%s\n",line);
         scanf("%f\t %f",&temperature[index],&chargeRate[index]);
     }
 }
