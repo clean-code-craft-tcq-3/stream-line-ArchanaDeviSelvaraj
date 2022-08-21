@@ -50,7 +50,7 @@ void readSensorDataFromConsole(float* temperature, float* chargeRate)
         float temp_chargeRate = stof(SOC_Trial);
         
         temperature[numberCount] = temp_Temperature;
-        cout<<numberCount<<endl<<temperature[numberCount] <<endl;
+        cout<<numberCount<<endl<<temperature[numberCount]<<endl;
         chargeRate[numberCount] = temp_chargeRate;
         cout<<chargeRate[numberCount]<<endl;
         numberCount++;
