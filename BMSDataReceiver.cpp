@@ -21,7 +21,6 @@ void readSensorDataFromConsole(float* temperature, float* chargeRate)
         cin.getline(line_input,60);
         cout<<line_input<<endl;
        
-        /*
         char Temperature_Trial[9] = {};
         char SOC_Trial[9] = {};
         
@@ -33,8 +32,8 @@ void readSensorDataFromConsole(float* temperature, float* chargeRate)
                 Temperature_Trial[index] =  line_input[i];
                 index++;
             }
-            cout<<Temperature_Trial;
-            //cout<<numberCount<<" "<<stof(Temperature_Trial)<<" ";
+            //cout<<Temperature_Trial<<endl;
+            cout<<numberCount<<" "<<stof(Temperature_Trial)<<" ";
             
             index=0;
             for(int i=41 ; i<51; i++)
@@ -42,7 +41,7 @@ void readSensorDataFromConsole(float* temperature, float* chargeRate)
                 SOC_Trial[index] =  line_input[i];
                 index++;
             }
-            cout<<SOC_Trial;
+            //cout<<SOC_Trial<<endl;;
             cout<<stof(SOC_Trial)<<endl;
             
             numberCount++;
