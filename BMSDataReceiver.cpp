@@ -2,7 +2,7 @@
 //#include "BMSDataSender.h"
 #include <iostream>
 #include <string.h>
-#include <bits/stdc++.h>
+//#include <bits/stdc++.h>
 using namespace std;
 
 //char line_input[60] = {};  
@@ -35,8 +35,8 @@ void readSensorDataFromConsole(float* temperature, float* chargeRate)
             }
             cout<<Temperature_Trial<<endl;
             //cout<<numberCount<<" "<<stof(Temperature_Trial)<<" ";
-            string temp_string(Temperature_Trial);
-            cout<<temp_string<<endl;
+            //string temp_string(Temperature_Trial);
+            //cout<<temp_string<<endl;
             temperature[numberCount] = stof(Temperature_Trial);
             cout<<temperature[numberCount]<<endl;
             
