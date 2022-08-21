@@ -24,7 +24,7 @@ void readSensorDataFromConsole(float* temperature, float* chargeRate)
         cin.getline(line_input,60);
         cout<<line_input<<endl;
         
-        if(line.find(":"))
+        if(line_input.find(":"))
         {
             cout<<"Line %d contains values"<<index<<endl;
         }
