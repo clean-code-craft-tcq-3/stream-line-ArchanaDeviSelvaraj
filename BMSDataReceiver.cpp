@@ -2,6 +2,7 @@
 //#include "BMSDataSender.h"
 #include <iostream>
 #include <string.h>
+#include <bits/stdc++.h>
 using namespace std;
 
 //char line_input[60] = {};  
@@ -46,10 +47,8 @@ void readSensorDataFromConsole(float* temperature, float* chargeRate)
             
             
         }
-        string temp_string;
-        temp_string(Temperature_Trial);
-        string SOC_string;
-        SOC_string(SOC_Trial);
+        string temp_string(Temperature_Trial);
+        string SOC_string(SOC_Trial);
         //float temp_Temperature = stof(temp_string);
         //float temp_chargeRate = stof(SOC_string);
         
