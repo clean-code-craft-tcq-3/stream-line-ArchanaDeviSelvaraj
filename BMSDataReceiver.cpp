@@ -19,7 +19,6 @@ void readSensorDataFromConsole(float* temperature, float* chargeRate)
         char line_input[60] = {};     
         
         cin.getline(line_input,60);
-        //printf("%s\n",line_input);
         cout<<line_input<<endl;
        
         /*
