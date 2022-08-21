@@ -33,7 +33,7 @@ void readSensorDataFromConsole(float* temperature, float* chargeRate)
             
             int index=0;
             //cout<<"Line %d contains values"<<index<<endl;
-            for(int i=15 ; i<22; i++)
+            for(int i=15 ; i<24; i++)
             {
                 Temperature_Trial[index] =  line_input[i];
                 index++;
@@ -43,7 +43,7 @@ void readSensorDataFromConsole(float* temperature, float* chargeRate)
             
             index=0;
             //cout<<"Line %d contains values"<<index<<endl;
-            for(int i=38 ; i<45; i++)
+            for(int i=42 ; i<51; i++)
             {
                 SOC_Trial[index] =  line_input[i];
                 index++;
