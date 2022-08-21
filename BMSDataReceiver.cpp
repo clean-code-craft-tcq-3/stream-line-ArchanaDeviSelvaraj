@@ -9,7 +9,8 @@ void readSensorDataFromConsole(float* temperature, float* chargeRate)
     //char line[100];
     //scanf("%[^\n]%*c",line);
     //printf("%s",line);
-    for(int index = 0; index < total_readings_count*2; index++)
+    int numberCount = 1;
+    for(int index1 = 0; index1 < total_readings_count*2; index1++)
     {
         //char line[100],a[20],b[20],c[20],d[20],e[20];
         //float num1, num2;
@@ -39,8 +40,8 @@ void readSensorDataFromConsole(float* temperature, float* chargeRate)
                 index++;
             }
             //char Temp[9] = 
-            cout<<Temperature_Trial<<endl;
-            cout<<stof(Temperature_Trial)<<endl;
+            //cout<<Temperature_Trial<<endl;
+            cout<<numberCount<<stof(Temperature_Trial)<<"";
             
             index=0;
             //cout<<"Line %d contains values"<<index<<endl;
@@ -50,9 +51,9 @@ void readSensorDataFromConsole(float* temperature, float* chargeRate)
                 index++;
             }
             //char Temp[9] = 
-            cout<<SOC_Trial<<endl;
+            //cout<<SOC_Trial<<endl;
             cout<<stof(SOC_Trial)<<endl;
-            
+            numberCount++;
         }
         else
         {
