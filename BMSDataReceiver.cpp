@@ -54,6 +54,7 @@ void readSensorDataFromConsole(float* temperature, float* chargeRate)
         cout<<chargeRate[numberCount]<<endl;
         */
     }
+    system("CLS");
 }
 
 float calculateMaxValue(float* sensorParameterName)
