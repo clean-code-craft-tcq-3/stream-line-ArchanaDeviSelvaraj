@@ -2,7 +2,6 @@
 //#include "BMSDataSender.h"
 #include <iostream>
 #include <string.h>
-#include <cstring.h>
 using namespace std;
 
 void readSensorDataFromConsole(float* temperature, float* chargeRate)
@@ -27,21 +26,31 @@ void readSensorDataFromConsole(float* temperature, float* chargeRate)
         string lineStringFormat(line_input);
         
         
-        int charPosition = strchr(lineStringFormat,':');
-        cout<<charPosition;
+        int charPosition = strchr(line_input,':');
+        //cout<<charPosition;
         if( charPosition != NULL)
         {
-            /*
-            int index=0
+            
+            int index=0;
             //cout<<"Line %d contains values"<<index<<endl;
-            for(int i=charPosition + 1 ; i<charPosition + 1+8; i++)
+            for(int i=15 ; i<22; i++)
             {
                 char Temperature_Trial[index] =  line_input[i];
                 index++;
             }
             //char Temp[9] = 
             cout<<Temperature_Trial<<endl;
-            */
+            
+            index=0;
+            //cout<<"Line %d contains values"<<index<<endl;
+            for(int i=38 ; i<45; i++)
+            {
+                char SOC_Trial[index] =  line_input[i];
+                index++;
+            }
+            //char Temp[9] = 
+            cout<<SOC_Trial<<endl;
+            
             
         }
         else
