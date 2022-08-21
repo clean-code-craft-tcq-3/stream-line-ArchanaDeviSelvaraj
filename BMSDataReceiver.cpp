@@ -4,6 +4,7 @@
 #include <string.h>
 using namespace std;
 
+char line_input[60] = {};  
 void readSensorDataFromConsole(float* temperature, float* chargeRate)
 {
     int numberCount = 1;
@@ -15,11 +16,11 @@ void readSensorDataFromConsole(float* temperature, float* chargeRate)
         //cin.getline(line,50);
         //printf("%s\n",line);
         //scanf("%f\t %f",&temperature[index],&chargeRate[index]);
-        char line_input[60] = {};     
+        line_input[60] = {};     
         
         cin.getline(line_input,60);
         //printf("%s\n",line_input);
-        //cout<<line_input<<endl;
+        cout<<line_input<<endl;
        
         /*
         char Temperature_Trial[9] = {};
