@@ -45,7 +45,7 @@ void readSensorDataFromConsole(float* temperature, float* chargeRate)
             cout<<stof(SOC_Trial)<<endl;
             
             numberCount++;
-        }*/
+        }
 
         /*
         temperature[numberCount] = stof(Temperature_Trial);
