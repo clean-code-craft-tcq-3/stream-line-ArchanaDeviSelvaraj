@@ -24,8 +24,7 @@ void readSensorDataFromConsole(float* temperature, float* chargeRate)
         char SOC_Trial[9] = {};
         
         if( strchr(line_input,':') != NULL)
-        {
-            
+        {   
             int index=0;
             for(int i=15 ; i<24; i++)
             {
@@ -41,6 +40,7 @@ void readSensorDataFromConsole(float* temperature, float* chargeRate)
                 index++;
             }
             cout<<stof(SOC_Trial)<<endl;
+            
             numberCount++;
         }
 
