@@ -46,8 +46,8 @@ void readSensorDataFromConsole(float* temperature, float* chargeRate)
             
             
         }
-        float temp_Temperature = stof(Temperature_Trial);
-        float temp_chargeRate = stof(SOC_Trial);
+        //float temp_Temperature = stof(Temperature_Trial);
+        //float temp_chargeRate = stof(SOC_Trial);
         
         /*
         temperature[numberCount] = temp_Temperature;
