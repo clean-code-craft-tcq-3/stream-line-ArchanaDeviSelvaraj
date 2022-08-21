@@ -9,7 +9,7 @@ void readSensorDataFromConsole(float* temperature, float* chargeRate)
     //char line[100];
     //scanf("%[^\n]%*c",line);
     //printf("%s",line);
-    for(int index = 0; index < total_readings_count+1; index++)
+    for(int index = 0; index < total_readings_count*2; index++)
     {
         //char line[100],a[20],b[20],c[20],d[20],e[20];
         //float num1, num2;
@@ -23,14 +23,19 @@ void readSensorDataFromConsole(float* temperature, float* chargeRate)
         
         cin.getline(line_input,60);
         cout<<line_input<<endl;
+        string lineStringFormat(line_input);
         
-        if(strchr(line_input,':') != NULL)
+        
+        charPosition = strchr(line_input,':');
+        if( charPosition != NULL)
         {
-            cout<<"Line %d contains values"<<index<<endl;
+            //cout<<"Line %d contains values"<<index<<endl;
+            char Temp[9] = 
+            
         }
         else
         {
-            cout<<"Line %d contains NO values"<<index<<endl;
+            //cout<<"Line %d contains NO values"<<index<<endl;
         } 
         
         //scanf("%s\t %s\t %f\t %s\t %s\t %s\t %f\n",&a,&b,&num1,&c,&e,&d,&num2);
