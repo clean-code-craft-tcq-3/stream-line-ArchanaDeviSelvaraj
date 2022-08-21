@@ -2,6 +2,7 @@
 //#include "BMSDataSender.h"
 #include <iostream>
 #include <string.h>
+#include <cstring.h>
 using namespace std;
 
 void readSensorDataFromConsole(float* temperature, float* chargeRate)
