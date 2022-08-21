@@ -26,7 +26,7 @@ void readSensorDataFromConsole(float* temperature, float* chargeRate)
         string lineStringFormat(line_input);
         
         
-        charPosition = strchr(line_input,':');
+        int charPosition = strchr(line_input,':');
         if( charPosition != NULL)
         {
             int index=0
