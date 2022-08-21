@@ -33,7 +33,7 @@ void readSensorDataFromConsole(float* temperature, float* chargeRate)
                 Temperature_Trial[index] =  line_input[i];
                 index++;
             }
-            //cout<<Temperature_Trial<<endl;
+            cout<<Temperature_Trial<<endl;
             //cout<<numberCount<<" "<<stof(Temperature_Trial)<<" ";
             
             index=0;
@@ -46,7 +46,7 @@ void readSensorDataFromConsole(float* temperature, float* chargeRate)
             //cout<<stof(SOC_Trial)<<endl;
             
             
-        }
+        
         string temp_string(Temperature_Trial);
         cout<<temp_string<<endl;
         string SOC_string(SOC_Trial);
@@ -61,6 +61,7 @@ void readSensorDataFromConsole(float* temperature, float* chargeRate)
         cout<<chargeRate[numberCount]<<endl;
         */
         numberCount++;
+        }
     }
 }
 
