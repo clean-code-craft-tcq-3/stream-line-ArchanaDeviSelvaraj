@@ -6,13 +6,16 @@ using namespace std;
 
 void readSensorDataFromConsole(float* temperature, float* chargeRate)
 {
-    for(int index = 0; index < total_readings_count; index++)
+    for(int index = 1; index < total_readings_count+1; index++)
     {
-        char line[100];
+        char line[100],a[20],b[20],c[20],d[20];
         //scanf("%s",line[index]);
-        cin.getline(line,50);
-        printf("%s\n",line);
+        //cin.getline(line,50);
+        //printf("%s\n",line);
         //scanf("%f\t %f",&temperature[index],&chargeRate[index]);
+        
+        scanf("%s\t %s\t %f\t %s\t %s\t %f",&a,&b,&temperature[index],&c,&d,&chargeRate[index]);
+        printf("%s\t %s\t %f\t %s\t %s\t %f",a,b,temperature[index],c,d,chargeRate[index]);
     }
 }
 
