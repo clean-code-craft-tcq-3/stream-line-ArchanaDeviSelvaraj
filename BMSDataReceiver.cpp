@@ -18,7 +18,7 @@ void readSensorDataFromConsole(float* temperature, float* chargeRate)
         //printf("%s\n",line);
         //scanf("%f\t %f",&temperature[index],&chargeRate[index]);
         char line[100];
-        scanf("%[^\n]%*c",line[index]);
+        scanf("%[^\n]%*s",line[index]);
         printf("%s",line[index]);
         
         //scanf("%s\t %s\t %f\t %s\t %s\t %s\t %f\n",&a,&b,&num1,&c,&e,&d,&num2);
