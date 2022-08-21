@@ -6,11 +6,7 @@ using namespace std;
 
 void readSensorDataFromConsole(float* temperature, float* chargeRate)
 {
-    //char line[100];
-    //scanf("%[^\n]%*c",line);
-    //printf("%s",line);
     int numberCount = 1;
-    float temperature[50], chargeRate[50];
     for(int index1 = 0; index1 <= total_readings_count*2; index1++)
     {
         //char line[100],a[20],b[20],c[20],d[20],e[20];
@@ -19,14 +15,11 @@ void readSensorDataFromConsole(float* temperature, float* chargeRate)
         //cin.getline(line,50);
         //printf("%s\n",line);
         //scanf("%f\t %f",&temperature[index],&chargeRate[index]);
-        char line_input[60] = {};
-        /*scanf("%[^\n]s",line);
-        printf("%s",line);*/
+        char line_input[60] = {};     
         
         cin.getline(line_input,60);
         cout<<line_input<<endl;
-        string lineStringFormat(line_input);
-        
+       
         char Temperature_Trial[9] = {};
         char SOC_Trial[9] = {};
         
@@ -34,37 +27,27 @@ void readSensorDataFromConsole(float* temperature, float* chargeRate)
         {
             
             int index=0;
-            //cout<<"Line %d contains values"<<index<<endl;
             for(int i=15 ; i<24; i++)
             {
                 Temperature_Trial[index] =  line_input[i];
                 index++;
             }
-            //char Temp[9] = 
-            //cout<<Temperature_Trial<<endl;
-            cout<<numberCount<<" "<<stof(Temperature_Trial)<<" ";
+            //cout<<numberCount<<" "<<stof(Temperature_Trial)<<" ";
             
             index=0;
-            //cout<<"Line %d contains values"<<index<<endl;
             for(int i=41 ; i<51; i++)
             {
                 SOC_Trial[index] =  line_input[i];
                 index++;
             }
-            //char Temp[9] = 
-            //cout<<SOC_Trial<<endl;
-            cout<<stof(SOC_Trial)<<endl;
+            //cout<<stof(SOC_Trial)<<endl;
             numberCount++;
         }
-        else
-        {
-            //cout<<"Line %d contains NO values"<<index<<endl;
-        } 
+
         temperature[numberCount] = stof(Temperature_Trial);
+        cout<<numberCount<<endl<<temperature[numberCount] <<endl;
         chargeRate[numberCount] = stof(SOC_Trial);
-        
-        //scanf("%s\t %s\t %f\t %s\t %s\t %s\t %f\n",&a,&b,&num1,&c,&e,&d,&num2);
-        //printf("%s\t %s\t %f\t %s\t %s\t %s\t %f\n",a,b,num1,c,e,d,num2);
+        cout<<chargeRate[numberCount]<<endl;
     }
 }
 
