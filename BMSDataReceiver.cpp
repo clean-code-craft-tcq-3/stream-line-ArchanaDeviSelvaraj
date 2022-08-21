@@ -26,7 +26,7 @@ void readSensorDataFromConsole(float* temperature, float* chargeRate)
         string lineStringFormat(line_input);
         
         
-        int charPosition = strchr(line_input,':');
+        int charPosition = strchr(lineStringFormat,':');
         cout<<charPosition;
         if( charPosition != NULL)
         {
