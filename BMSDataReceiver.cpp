@@ -37,7 +37,7 @@ void readSensorDataFromConsole(float* temperature, float* chargeRate)
             //cout<<numberCount<<" "<<stof(Temperature_Trial)<<" ";
             string temp_string(Temperature_Trial);
             cout<<temp_string<<endl;
-            temperature[numberCount] = stof(temp_string);
+            temperature[numberCount] = stof(Temperature_Trial);
             cout<<temperature[numberCount]<<endl;
             
             index=0;
