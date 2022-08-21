@@ -4,7 +4,7 @@
 #include <string.h>
 using namespace std;
 
-char line_input[60] = {};  
+//char line_input[60] = {};  
 void readSensorDataFromConsole(float* temperature, float* chargeRate)
 {
     int numberCount = 1;
